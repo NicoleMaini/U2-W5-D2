@@ -130,16 +130,17 @@ h1 {
   margin-bottom: 0.7em;
 }
 
-.container-underline {
+.container-underline span {
+  display: inline-block;
   position: relative;
 }
 
 .container-underline img {
   position: absolute;
-  width: 35rem;
+  width: 100%;
   opacity: 50%;
   right: 0;
-  bottom: -30%;
+  bottom: -0.5rem;
 }
 
 p,
@@ -374,6 +375,9 @@ aside div p:last-child {
 }
 
 @media screen and (max-width: 700px) {
+  .container-icons .far {
+    font-size: 1.5rem;
+  }
   .container-icons .fa-plus-square {
     position: fixed;
     right: -0.75rem;
@@ -401,7 +405,7 @@ aside div p:last-child {
   .container-icons .fa-calendar-alt {
     position: fixed;
     right: -0.75rem;
-    top: 10%;
+    top: 13%;
     z-index: 2;
   }
   .container-icons .fa-caret-square-up {
