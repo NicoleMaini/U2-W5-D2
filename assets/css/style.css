@@ -249,10 +249,8 @@ iframe {
     width: 50%;
     margin-inline: -2px;
     vertical-align: middle;
-  }
-
-  iframe {
     height: 267px;
+    margin-top: 2rem;
   }
 }
 
