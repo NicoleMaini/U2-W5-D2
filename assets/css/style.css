@@ -376,23 +376,37 @@ aside div p:last-child {
 }
 
 .container-icons .fa-plus-square {
-  position: fixed;
-  right: -0.25rem;
+  position: absolute;
+  right: -0.75rem;
   top: 1.5%;
   z-index: 2;
 }
 .container-icons .fa-calendar-alt {
-  position: fixed;
-  right: -0.25rem;
+  position: absolute;
+  right: -0.75rem;
   top: 10%;
   z-index: 2;
 }
 .container-icons .fa-caret-square-up {
-  position: fixed;
-  right: -0.25rem;
-  bottom: 10%;
+  position: absolute;
+  right: -0.75rem;
   z-index: 2;
   color: #7125a0;
+}
+
+@media screen and (max-width: 701px) {
+  .container-icons .fa-plus-square {
+    position: relative;
+    right: -99%;
+  }
+  .container-icons .fa-calendar-alt {
+    position: relative;
+    right: -99%;
+  }
+  .container-icons .fa-caret-square-up {
+    position: relative;
+    right: -99%;
+  }
 }
 
 /* FOOTER */
