@@ -375,37 +375,43 @@ aside div p:last-child {
   color: rgb(12, 14, 126);
 }
 
-.container-icons .fa-plus-square {
-  position: absolute;
-  right: -0.75rem;
-  top: 1.5%;
-  z-index: 2;
-}
-.container-icons .fa-calendar-alt {
-  position: absolute;
-  right: -0.75rem;
-  top: 10%;
-  z-index: 2;
-}
-.container-icons .fa-caret-square-up {
-  position: absolute;
-  right: -0.75rem;
-  z-index: 2;
-  color: #7125a0;
-}
-
-@media screen and (max-width: 701px) {
+@media screen and (max-width: 700px) {
   .container-icons .fa-plus-square {
-    position: relative;
-    right: -99%;
+    position: fixed;
+    right: -0.75rem;
+    bottom: 11rem;
   }
   .container-icons .fa-calendar-alt {
-    position: relative;
-    right: -99%;
+    position: fixed;
+    right: -0.75rem;
+    bottom: 6rem;
   }
   .container-icons .fa-caret-square-up {
-    position: relative;
-    right: -99%;
+    position: fixed;
+    right: -0.75rem;
+    bottom: 1rem;
+    color: #7125a0;
+  }
+}
+@media screen and (min-width: 701px) {
+  .container-icons .fa-plus-square {
+    position: fixed;
+    right: -0.75rem;
+    top: 1.5%;
+    z-index: 2;
+  }
+  .container-icons .fa-calendar-alt {
+    position: fixed;
+    right: -0.75rem;
+    top: 10%;
+    z-index: 2;
+  }
+  .container-icons .fa-caret-square-up {
+    position: fixed;
+    right: -0.5rem;
+    bottom: 1rem;
+    z-index: 2;
+    color: #7125a0;
   }
 }
 
